@@ -1,0 +1,22 @@
+# Archivo .gitignore
+# -------------------------------------------------------------------------
+# 1. Archivos de Datos de la Empresa (Tus Excels y cualquier otra DB local)
+# Los archivos siguientes contienen informacion sensible y NUNCA deben ir a GitHub.
+Empleados.xlsx
+Distribucion.xlsx
+*.csv
+*.db
+*.sqlite
+
+# 2. Secretos y Credenciales de la Aplicacion (Streamlit, Google, etc.)
+# Estos archivos contienen contraseñas o tokens.
+.streamlit/secrets.toml
+token.json
+credentials.json
+
+# 3. Archivos y Carpetas de Python que no son necesarios en el repositorio
+# Ignora el entorno virtual y los archivos de cache.
+__pycache__/
+.venv/
+env/
+*.pyc
